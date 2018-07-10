@@ -1,0 +1,18 @@
+server:
+  port: 8087
+spring:
+  profiles:
+    active: test1,sender,receiver
+  rabbitmq:
+      port: 5672
+      host: 192.168.60.200
+      username: admin
+      password: admin
+      virtual-host: asr
+logging:
+  level:
+    org: ERROR
+
+tutorial:
+  client:
+    duration: 600

@@ -1,0 +1,18 @@
+{
+    "totalPage": 12,
+    "currentPage": 1,
+    "list": [
+        {
+            "name": "阿道夫",
+            "age": 25,
+            "gender": "boy",
+            "id": 11
+        },
+        {
+            "name": "阿杜",
+            "age": 60,
+            "gender": "girl",
+            "id": 12
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-1.11.3.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script type="text/javascript" src="template-web.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<link type="text/css" rel="stylesheet" href="css.css">
+<script type="text/javascript">
+	$(function() {
+		post("/get", function(res) {
+			alert(res);
+		});
+		/* isLogin(); */
+		layer.alert('墨绿风格，点击确认看深蓝', {
+				btn: ['确定'],
+				skin: 'layui-layer-molv',
+				closeBtn: 0,
+				title: "info"
+			});
+	});
+</script>
+</head>
+<body>
+	<div id="login_body" style="display: none;">
+		<div style="width: 270px; margin-left: 50px;" class="layui-bg-green">
+			<div class="title" id="title_2">帐号密码登录</div>
+			<div>
+				<input type="text" class="inputstyle" id="user" placeholder="用户名" value="" />
+			</div>
+			<div>
+				<input type="password" class="inputstyle" id="pwd" placeholder="密码" value="" />
+			</div>
+			
+			<div style="margin:10px 0 0 0; width: 100%;text-align: center;">
+				<input type="button" tabindex="6" value="登 录" class="btn" id="login_button" onclick="login()">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

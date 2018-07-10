@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">  
+	<cache alias="foo"> 
+	    <key-type>java.lang.String</key-type> 
+	    <resources>
+	      <heap size="2000" unit="entries"/> 
+	      <offheap size="10" unit="mb"/> 
+	    </resources>
+	</cache>
+
+	<cache-template name="myDefaults">
+		<key-type>java.lang.Long</key-type>
+		<value-type>java.lang.String</value-type>
+		<heap size="200" unit="entries" />
+	</cache-template>
+
+	<cache alias="bar" uses-template="myDefaults"> 
+	  <key-type>java.lang.Number</key-type>
+	</cache>
+
+	<cache alias="simpleCache" uses-template="myDefaults" />
+</beans>

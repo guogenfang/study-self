@@ -1,0 +1,15 @@
+server:
+  port: 8070
+
+#debug: true
+
+logging:
+  root: info
+  #logging.path和logging.file同时配置，不会在这个路径有日志生成，logging.path和logging.file不会进行叠加
+  #logging.path和logging.file的value都可以是相对路径或者绝对路径
+  #path: f:\\test #若只配置path那么将会在文件夹生成一个日志文件为spring.log
+  #file: test.log #若只配置logging.file，那将会在项目的当前路径下生成一个demo.log日志文件 也可以使用绝对路径
+  level:
+    #org.study.self.kafka: DEBUG
+
+#management.security.enabled: false

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"> 
+	<jedis.ip>127.0.0.1</jedis.ip>
+	<jedis.port>6379</jedis.port>
+	<jedis.password></jedis.password>
+</beans>

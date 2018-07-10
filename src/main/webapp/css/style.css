@@ -1,0 +1,46 @@
+﻿@charset "utf-8";
+body {
+	font-size: 12px;
+	font-family:'Microsoft YaHei',regular,"\5FAE\x8F6F\6B63\9ED1\4F53 ","\5FAE\8F6F\96C5\9ED1","\9ED1\4F53","\5b8b\4f53",'Hiragino Sans GB', tahoma, helvetica, "microsoft yahei", arial;
+	color: #676767;
+}
+
+.clear{clear: both;}
+
+.split_page{
+	float: left;
+	width:30px;
+	height:30px;
+	line-height: 30px;
+	margin-left: 12px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #eee;
+	color: #000000;
+}
+
+.active{
+	background-color: #f86b4f;
+	font-weight: bolder;
+	color:#FFFFFF;
+}
+
+.skip_page{
+	width: 80px;
+}
+
+.split_page:hover{
+	background-color:#f86b4f;
+	color:#FFFFFF;
+}
+
+.separate {cursor: default; border:none;border-bottom:none;background: none;}
+.separate:hover {background: none;}
+
+.split_page_count{
+	font-size: 14px;
+	height:30px;
+	line-height: 30px;
+	margin-left:20px;
+	float: left;
+}

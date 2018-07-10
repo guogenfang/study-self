@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/lib/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	var object1 = {
+		apple: 0,
+		banana: { weight: 52, price: 100 },cherry: 97
+	};
+	var object2 = {banana: { price: 200 },durian: 100};
+	
+	// Merge object2 into object1
+	$.extend( object1, object2 );
+	console.log(object1);
+	
+	// Merge object1 into jQuery
+	$.extend( object1 );
+	
+	console.log( $.banana );
+</script>
+</head>
+<body>
+
+</body>
+</html>

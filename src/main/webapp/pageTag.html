@@ -1,0 +1,19 @@
+<div ng-click="changePage(conf.currentPage - 1)" 
+	 ng-if="conf.currentPage != 1"
+	 class="split_page skip_page">上一页</div>
+
+<div class="split_page"
+	 ng-repeat="no in pageList track by $index"
+	 ng-class="{active: no == conf.currentPage, separate: no == '...'}"
+	 ng-click="no != '...' && changePage(no)"  ng-bind="no"></div>
+	 
+<div ng-click="changePage(conf.currentPage + 1)" 
+	 class="split_page skip_page" 
+	 ng-show="conf.currentPage < conf.pageTotal">下一页</div>
+
+<div class="split_page_count">
+	<span>当前第</span><span ng-bind="conf.currentPage"></span>
+	<span>页/共&nbsp;</span><span ng-bind="conf.totalNumber"></span>
+	<span>条记录</span>
+</div>
+<div class='clear'></div>

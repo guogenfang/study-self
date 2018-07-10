@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+    <property name="LOG_FILE" value="stub-inner.log"/>
+    <appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	  <file>${LOG_FILE}</file>
+	  <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	    <FileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.log</FileNamePattern>
+	    <maxHistory>60</maxHistory>         
+	  </rollingPolicy>
+	  <encoder>
+	    <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg %n</Pattern>
+	  </encoder>        
+	</appender>
+    <root level="ERROR">
+        <appender-ref ref="dailyRollingFileAppender" />
+    </root>
+    <logger name="org.springframework" level="info"/>
+    <logger name="org.study.self.spring.boot" level="error"/>
+    <logger name="org.jooq" level="ERROR">
+    	<appender-ref ref="CONSOLE" />
+    </logger>
+    <logger name="com.zaxxer" level="ERROR">
+    	<appender-ref ref="CONSOLE" />
+    </logger>
+</configuration>
