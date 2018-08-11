@@ -49,5 +49,12 @@ public class ListTest {
 	
 	public static void main(String[] args) {
 		System.out.println(new Date());
+		List l = new ArrayList();
+		l.add(1);
+		l.add(2);
+		for (int i = 0; i < l.size() -1; i++){
+            System.out.println(l.get(i));
+        }
+
 	}
 }

@@ -9,7 +9,7 @@ spring:
     username: root
     password: 123
   jooq:
-    sql-dialect: MYSQL
+    sql-dialect: mysql
    
 logging:
   root: info

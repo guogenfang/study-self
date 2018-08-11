@@ -18,7 +18,7 @@ import java.nio.file.WatchKey;
 import java.nio.file.WatchService;
 import java.nio.file.attribute.FileAttribute;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class FilesTest {
 
