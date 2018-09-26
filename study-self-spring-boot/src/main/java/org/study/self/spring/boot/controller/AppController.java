@@ -39,7 +39,7 @@ public class AppController implements InitializingBean{
 		return 200;
 	}
 	
-	
+
 	@RequestMapping(value = "/name")
 	public Result getName() {
 		logger.info("-----------getName-----------");
