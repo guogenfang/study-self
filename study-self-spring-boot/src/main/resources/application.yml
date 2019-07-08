@@ -5,9 +5,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/av-service?useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://192.168.60.224:3306/av-service?useUnicode=true&characterEncoding=UTF-8
     username: root
-    password: 123
+    password: mediate
   jooq:
     sql-dialect: mysql
    

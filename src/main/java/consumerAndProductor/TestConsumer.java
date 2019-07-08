@@ -7,7 +7,8 @@ public class TestConsumer implements Runnable{
     public void TestProduct(TestQueue tq){  
         this.obj=tq;  
     }  
-      
+
+    @Override
     public void run() {  
         for(int i=0;i<10;i++){  
             try {  

@@ -144,5 +144,5 @@
 		<module>study-self-jooq</module>
 		<module>study-self-java-base</module>
     <module>study-self-kafka</module>
-  </modules>
+    </modules>
 </project>

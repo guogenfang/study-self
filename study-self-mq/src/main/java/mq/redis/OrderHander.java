@@ -10,8 +10,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.atomic.AtomicLong;
 
-import org.junit.Test;
-
 import redis.clients.jedis.Jedis;
 
 public class OrderHander {

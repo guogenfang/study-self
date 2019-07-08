@@ -4,18 +4,20 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.ggf</groupId>
-		<artifactId>study</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.2.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<artifactId>study-self-jooq</artifactId>
 	<name>study-self-jooq</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<db.name>av-service</db.name>
-		<db.url>jdbc:mysql://localhost:3306</db.url>
+		<db.url>jdbc:mysql://192.168.60.224:3306</db.url>
 		<db.user>root</db.user>
-		<db.password>123</db.password>
+		<db.password>mediate</db.password>
 	</properties>
 	<dependencies>
 		<dependency>

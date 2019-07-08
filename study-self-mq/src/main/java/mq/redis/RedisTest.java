@@ -5,13 +5,13 @@ import java.util.Set;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.ScanParams;
 import redis.clients.jedis.ScanResult;
 
 public class RedisTest {
-	private Jedis jedis; 
+	private Jedis jedis;
+
 	@Before
  	public void setup() {
 		//连接redis服务器
