@@ -145,7 +145,7 @@ public class ReadJavaFiles {
 		+ "});"
 		+ "}\r\n"
 		+ "function getMenuList(success, error) {"
-	    + "$serviceSDK.com_sifayun_platform_service_api_IMenuService.getMenuList(success, error);"
+	    + "$serviceSDK.com_ggf_platform_service_api_IMenuService.getMenuList(success, error);"
 	    + "}";
 	}
 }
